@@ -1,0 +1,283 @@
+/* CURRENTLY IN: styles/main.css */
+.controlArrow.next {
+	border-color: transparent transparent transparent #000;
+}
+
+.controlArrow.prev {
+	border-color: transparent #000 transparent transparent;
+}
+
+/*.initial { 
+	height:			120%;
+	width:			120%;
+	margin:			auto;
+	background-color: rgba(0,0,0,0.5);
+
+}
+
+
+
+.name {
+	float:			left;
+	width:			630px;
+	height:			150px;
+	background-color: rgba(0,0,0,0.5);
+	margin:			 40px auto;
+	border-radius:	2px;
+	color:			#FAE9DE;
+	border:			solid black 2px;
+	font-size: 		140px;
+}*/
+
+.initial {
+	width:			900px;
+	height:			400px;
+	margin:			auto;
+	margin-bottom:	60px;
+	margin-top:		-30px;
+	background-color:	rgba(255, 255, 255, 0.48);
+	color:			#11002B;
+	border-radius:  2px;
+	border:			2px solid;
+	border-color:	black;
+	overflow:		none;
+}
+
+h1 {
+	font-size:		80px;
+	margin:			30px;
+	margin-top:		-5px;
+}
+
+
+.motto { 
+	color:			#FAE9DE;
+	float:			right;
+	font-size:		30px;
+	color:			#11002B;
+}
+
+.top {
+	border-bottom:	solid black 1px;
+	margin-top:		70px;
+}
+
+.initial {
+	width:			5;
+	margin:			2% auto;
+	text-align:		left;
+	font-size:		30px;
+	clear:			both;
+	color:			#FAE9DE;
+}
+
+body {
+	background-image: 	url(background3.jpg);
+	background-size:	cover;
+
+}
+
+
+.decider {
+	width:			960px;
+	overflow:		hidden;
+	margin:			auto;
+	border:			solid #291D14 1px;
+}
+
+.tool {
+	width:			960px;
+	overflow:		hidden;
+	margin:			auto;
+	padding-top:	100px;
+}
+
+.box {
+	width:			800px;
+	height:			350px;
+	margin:			auto;
+	margin-bottom:	60px;
+	margin-top:		-30px;
+	background-color:	rgba(255, 255, 255, 0.48);
+	color:			#11002B;
+	border-radius:  2px;
+	border:			2px solid;
+	border-color:	black;
+	overflow:		none;
+}
+
+
+.questionText {
+	text-align:		center;
+	font-size: 		80px;
+	margin:			auto;
+	margin-top:		115px;
+	letter-spacing:	5px;
+}
+
+.event {
+	text-align:		center;
+}
+
+.eventQuestion {
+	margin-top:		20px;
+	font-size:		150%;
+}
+
+.result {
+}
+
+
+.input {
+	margin-bottom:		20px;
+}
+
+.answer {
+	text-align: 		center;
+}
+
+.share {
+	height:				40px;
+	width:				180px;
+}
+
+.form-control {
+	width:				200px;
+}
+
+.one {
+	width:				300px;
+	height:				55px;
+	font-size:			35px;
+	margin-top:			60px;
+	display:			inline;
+
+}
+
+.two {
+	width:				700px;
+	height:				55px;
+	font-size:			35px;
+	margin-top:			60px;
+	display:			inline;
+}
+
+.three {
+	width:				190px;
+	height:				55px;
+	font-size:			35px;
+	margin-top:			60px;
+	display:			inline;
+}
+
+form {
+	font-size:			40px;
+}
+
+.toSlide {
+	margin-top:			15px;
+	
+	border-radius:		4px;
+	
+	width:				320px;
+	height:				120px;
+	font-size:			60px;
+	margin:				auto;
+	margin-top:				40px;
+
+}
+.btn-primary {
+	margin-top:			15px;
+	color:				#FAE9DE;
+	background-color:	#9E8473;
+	border-radius:		4px;
+	border:				1px #FAE9DE;
+	width:				320px;
+	height:				120px;
+	font-size:			60px;
+	margin:				auto;
+	margin-top:				40px;
+}
+
+.first {
+	width:				500px;
+	height:				100px;
+	margin-top:				40px;
+}
+
+.btn-primary:hover {
+	background-color:	#291D14;
+	border:				3px solid #9E8473;
+	color:				#9E8473;
+}
+
+.btn-primary:focus {
+	background-color:	#291D14;
+	border:				3px solid #9E8473;
+	color:				#9E8473;
+}
+
+.btn-xs {
+	margin-top:			-5px;
+	width:				40px;
+	height:				40px;
+}
+
+.answer .answer2 {
+	width:				700px;
+	height:   			100px;
+	margin:				20px auto;
+	font-size: 			70px;
+}
+
+.list-group-item {
+	color:				white;
+}
+
+.share {
+	width:				800px;
+	margin:			    auto 20px;
+	font-size:			30px;
+	text-align:			center;
+}
+
+/*.progress {
+	height:				50px;
+	width:				50px;
+	border-radius:		50%;
+	background-color:	#FAE9DE;
+	float:				left;
+	margin:				20px;
+	border:				1px solid black;
+}*/
+
+.fullPage-slidesNav span {
+	height:				50px;
+	width:				50px;
+}
+
+.fullPage-slidesNav li {
+	height:				61px;
+	width:				81px;
+	margin-top: 		40px;
+}
+
+.list-group-item {
+	background-color:	black;
+}
+
+nav {
+	background-color:	rgba(255, 255, 255, 0.48);
+	width:				100%;
+	height:				90px;
+	border-top:			1px solid black;
+	position:			fixed;
+	bottom:				0px;
+}
+
+/*.decider { 
+	position: absolute;
+}*/
+
+/*bottom two slides postion absolute
+
