@@ -135,15 +135,22 @@ $('.deciderInput').append(newInput)
 
 $.fn.fullpage( {
 	resize: true,
-	loopBottom: true,
+	//loopBottom: true,
 	slidesNavigation: true,
 	afterRender: function(){
             $($('.section').get(0)).find('.fullPage-slidesNav').hide();
         }
 } );
 
-	$( 'h1' ).on('click', function() {
+$( '.arrow-up' ).on('click', function() {
+
+		$.fn.fullpage.moveSectionUp();
+});
+
+$( '.arrow-down' ).on('click', function() {
+
 		$.fn.fullpage.moveSectionDown();
-	})
+});
+
 
 })();

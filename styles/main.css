@@ -275,6 +275,14 @@ nav {
 	bottom:				0px;
 }
 
+.arrows-holder {
+	width: 200px;
+	height: 200px;
+	position: fixed;
+	background-color: yellow;
+	z-index: 999999999;
+}
+
 /*.decider { 
 	position: absolute;
 }*/
