@@ -47,8 +47,6 @@
 			}
 
 var rando = Math.random();
-      
-console.log( rando );
     
 	if(rando < 0.5) { var finalChoice = choice1;
 	} 
@@ -99,13 +97,61 @@ var rando = Math.random();
       
       	// if we made it here, then task is valid 
 			var end2 = $( '.end2' );
-			end2.text( finalChoice2 );
-			
-
+			end2.text( finalChoice2 );	
 		}
 	);
 
 //third question
+
+var formInput3 = $( '.decide-button3' );
+	var Decision3 = $( '.answer3' );
+	formInput3.on(
+		'click'
+		, function( e ) {
+		
+			// grab the task in the input field
+			var choicethree1 = $( '#three1' ).val();
+			var choicethree2 = $( '#three2' ).val();
+			var choicethree3 = $( '#three3' ).val();
+		
+
+			if ( choicethree1 == "" || choicethree1 == " " ) {
+				alert('You forgot to enter something, idiot!');
+				e.stopPropagation();
+				// there is nothing left to do, so peace
+				return;
+			}
+
+
+			if ( choicethree2 == "" || choicethree2 == " " ) {
+				alert('You forgot to enter something, idiot!');
+				e.stopPropagation();
+				// there is nothing left to do, so peace
+				return;
+			}
+
+
+			if ( choicethree3 == "" || choicethree3 == " " ) {
+				alert('You forgot to enter something, idiot!');
+				e.stopPropagation();
+				// there is nothing left to do, so peace
+				return;
+			}
+
+
+var rando = Math.random();
+    
+	if(rando < 0.5) { var finalChoice3 = choicethree1;
+	} 
+	else {var finalChoice3 = choicethree2;
+	}
+      	// if we made it here, then task is valid 
+			var end3 = $( '.end3' );
+			end3.text( finalChoice3 );
+			
+
+		}
+	);
 /*
 
 //run when you click decide button
@@ -151,6 +197,10 @@ $( '.arrow-down' ).on('click', function() {
 
 		$.fn.fullpage.moveSectionDown();
 });
+
+$( 'h1' ).on('click', function() {
+		$.fn.fullpage.moveSectionDown();
+	})
 
 
 })();

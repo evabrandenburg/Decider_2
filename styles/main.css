@@ -29,6 +29,11 @@
 	font-size: 		140px;
 }*/
 
+.name {
+	font-size:		150px;
+	color:			#11002B;
+}
+
 .initial {
 	width:			900px;
 	height:			400px;
@@ -132,8 +137,9 @@ body {
 	margin-bottom:		20px;
 }
 
-.answer {
+.ANSWER {
 	text-align: 		center;
+	font-size:			100px;
 }
 
 .share {
@@ -141,9 +147,9 @@ body {
 	width:				180px;
 }
 
-.form-control {
+/*.form-control {
 	width:				200px;
-}
+}*/
 
 .one {
 	width:				300px;
@@ -206,13 +212,13 @@ form {
 }
 
 .btn-primary:hover {
-	background-color:	#291D14;
+	background-color:	#11002B;;
 	border:				3px solid #9E8473;
 	color:				#9E8473;
 }
 
 .btn-primary:focus {
-	background-color:	#291D14;
+	background-color:	#11002B;
 	border:				3px solid #9E8473;
 	color:				#9E8473;
 }
@@ -276,11 +282,23 @@ nav {
 }
 
 .arrows-holder {
-	width: 200px;
-	height: 200px;
-	position: fixed;
-	background-color: yellow;
-	z-index: 999999999;
+	width: 				200px;
+	height: 			200px;
+	position: 			fixed;
+	margin-left:		100px;
+	margin-top:			250px;		
+	z-index: 			999999999;
+	font-size:			80px;
+	color:				white;
+}
+
+.arrowup {
+
+
+}
+
+.arrowdown {
+
 }
 
 /*.decider { 
