@@ -130,6 +130,9 @@ body {
 }
 
 .result {
+	text-align:		center;
+	font-size:		50px;
+
 }
 
 
@@ -138,13 +141,11 @@ body {
 }
 
 .ANSWER {
-	text-align: 		center;
-	font-size:			100px;
+	font-size:			80px;
 }
 
 .share {
-	height:				40px;
-	width:				180px;
+	font-size: 			30px;
 }
 
 /*.form-control {
@@ -203,12 +204,15 @@ form {
 	font-size:			60px;
 	margin:				auto;
 	margin-top:				40px;
+	padding-top:		10px;
 }
 
 .first {
 	width:				500px;
 	height:				100px;
 	margin-top:				40px;
+	margin-left: 		40px;
+
 }
 
 .btn-primary:hover {
@@ -265,7 +269,7 @@ form {
 .fullPage-slidesNav li {
 	height:				61px;
 	width:				81px;
-	margin-top: 		40px;
+	padding-top:		20px;
 }
 
 .list-group-item {
