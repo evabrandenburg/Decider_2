@@ -46,11 +46,11 @@
 				return;
 			}
 
-var rando = Math.random();
+			var rando = Math.random();
     
-	if(rando < 0.5) { var finalChoice = choice1;
-	} 
-	else {var finalChoice = choice2;
+		if(rando < 0.5) { var finalChoice = choice1;
+		} 
+		else {var finalChoice = choice2;
 	}
       
       
@@ -58,10 +58,6 @@ var rando = Math.random();
 			// if we made it here, then task is valid 
 			var end = $( '.end' );
 			end.text( finalChoice );
-
-	
-			
-
 		
 		}
 	);
@@ -88,14 +84,14 @@ var rando = Math.random();
 				return;
 			}
 
-var rando = Math.random();
+		var rando = Math.random();
     
-	if(rando < 0.5) { var finalChoice2 = 'NO';
-	} 
-	else {var finalChoice2 = 'YES';
-	}
+		if(rando < 0.5) { var finalChoice2 = 'NO';
+		} 
+		else {var finalChoice2 = 'YES';
+		}
       
-      	// if we made it here, then task is valid 
+      	// if we made it here, then valid
 			var end2 = $( '.end2' );
 			end2.text( finalChoice2 );	
 		}
@@ -138,32 +134,58 @@ var formInput3 = $( '.decide-button3' );
 				return;
 			}
 
+			var threes = $('.three')
+			var threesLeng = threes.length
 
-var rando = Math.random();
+			var desicionThree = Math.floor(Math.random() * (threesLeng)) + 1;
+			console.log(threesLeng, desicionThree);
+
+			var winner = $('#three' + desicionThree).val();
+
+			console.log(winner);
+
+			/*var rando = Math.random();
     
-	if(rando < 0.5) { var finalChoice3 = choicethree1;
-	} 
-	else {var finalChoice3 = choicethree2;
-	}
+			if(rando < 0.5) { var finalChoice3 = choicethree1;
+			} 
+			else {var finalChoice3 = choicethree2;
+			}*/
+
       	// if we made it here, then task is valid 
 			var end3 = $( '.end3' );
-			end3.text( finalChoice3 );
+			end3.text( winner );
 			
 
 		}
 	);
+
+		var plusbutton = $( '.plus' );
+			plusbutton.on(
+				'click'
+				, function( e ){
+					var newInput = $('<input/>');
+					console.log(newInput)
+
+
+					newInput.addClass('form-control three');
+					newInput.attr('id','three'+ ($('.three').length +1))
+					console.log(newInput)
+					$('.NEXT').append(newInput).append( ' or ' );
+
+				} 
+			);
+
+			var minusbutton = $( '.minus' );
+			minusbutton.on(
+				'click'
+				, function( e ){
+					var takeaway = $('<input/>');
+					takeaway.removeClass('form-control three');
+
+				} 
+			);
+
 /*
-
-//run when you click decide button
-var threes = $('.three')
-var threesLeng = threes.length
-
-var desicionThree = Math.floor(Math.random() * (threesLeng)) + 1;
-console.log(threesLeng, desicionThree);
-
-var winner = $('#three' + desicionThree).val()
-
-console.log(winner);
 
 //add input
 
