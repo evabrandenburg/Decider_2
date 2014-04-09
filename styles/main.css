@@ -30,15 +30,18 @@
 }*/
 
 .name {
-	font-size:		150px;
+	font-size:		100px;
 	color:			#11002B;
+	margin-left:	50px;
 }
 
 .the {
 	background-image: url(the.png);
-	height:			50px;
-	width:			120px;
+	height:			150px;
+	width:			150px;
 	background-size: 130%;
+	margin-bottom:	-100px;
+	margin-left:	-20px;
 }
 
 .initial {
@@ -63,10 +66,12 @@ h1 {
 
 
 .motto { 
-	color:			#FAE9DE;
+	height:			110px;
+	width:			350px;
+	background-image: url(motto.png);
+	background-size:	100%;
 	float:			right;
-	font-size:		30px;
-	color:			#11002B;
+	margin-top:		-110px;
 }
 
 .top {
@@ -219,6 +224,7 @@ form {
 	height:				100px;
 	margin-top:				40px;
 	margin-left: 		40px;
+	font-size:			50px;
 
 }
 
