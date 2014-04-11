@@ -200,7 +200,7 @@ $( '.arrow-down' ).on('click', function() {
 		$.fn.fullpage.moveSectionDown();
 });
 
-$( '.questionScribble, h1' ).on('click', function() {
+$( 'h1, .Or' ).on('click', function() {
 		$.fn.fullpage.moveSectionDown();
 	})
 
