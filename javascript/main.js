@@ -20,14 +20,14 @@
 				if ( choice == "" || choice == " " ) {
 				alert(alertChoice);
 				e.stopPropagation();
-				// there is nothing left to do, so peace
+				// there is nothing left to do
 				return;
 				}
 			}
 
 			if (!validate( choice1 'You forgot to enter something, idiot!')) {
 	e.stopPropagation();
-				// there is nothing left to do, so peace
+				// there is nothing left to do
 				return;
 			
 			}*/
@@ -53,8 +53,6 @@
 		else {var finalChoice = choice2;
 	}
       
-      
-
 			// if we made it here, then task is valid 
 			var end = $( '.end' );
 			end.text( finalChoice );
@@ -106,33 +104,20 @@ var formInput3 = $( '.decide-button3' );
 		, function( e ) {
 		
 			// grab the task in the input field
-			var choicethree1 = $( '#three1' ).val();
-			var choicethree2 = $( '#three2' ).val();
-			var choicethree3 = $( '#three3' ).val();
-		
+			
+			var choiceThreeAll = $( '.three' ); 
 
-			if ( choicethree1 == "" || choicethree1 == " " ) {
-				alert('You forgot to enter something, idiot!');
-				e.stopPropagation();
-				// there is nothing left to do, so peace
-				return;
-			}
+			//grab everything with an class of three using each and 
+			choiceThreeAll.each(function validate( unused, choice ) {
+				//see what's inside and see if anything's there
+				//if not alert something
+				if ( $(choice).val() == "" || $(choice).val() == " " ) {
+					alert( 'You forgot to enter something, idiot!' );
+					e.stopPropagation();
+					return false;
+				}
+			});
 
-
-			if ( choicethree2 == "" || choicethree2 == " " ) {
-				alert('You forgot to enter something, idiot!');
-				e.stopPropagation();
-				// there is nothing left to do, so peace
-				return;
-			}
-
-
-			if ( choicethree3 == "" || choicethree3 == " " ) {
-				alert('You forgot to enter something, idiot!');
-				e.stopPropagation();
-				// there is nothing left to do, so peace
-				return;
-			}
 
 			var threes = $('.three')
 			var threesLeng = threes.length
@@ -160,30 +145,33 @@ var formInput3 = $( '.decide-button3' );
 	);
 
 		var plusbutton = $( '.plus' );
-			plusbutton.on(
+		var countInput = 3;
+		plusbutton.on(
 				'click'
 				, function( e ){
 					var newInput = $('<input/>');
-					console.log(newInput)
 
-
-					newInput.addClass('form-control three');
-					newInput.attr('id','three'+ ($('.three').length +1))
-					console.log(newInput)
-					$('.NEXT').append(newInput).append( ' or ' );
-
+					if( countInput <= 5 ){
+						newInput.addClass('form-control three');
+						newInput.attr('id','three'+ ($('.three').length +1));
+						console.log(newInput);
+						$('.NEXT').append(newInput).append( ' or ' );
+			
+						countInput = countInput + 1;
+						console.log( 'countinput: ' + countInput );
+					}
 				} 
-			);
+		);
 
-			var minusbutton = $( '.minus' );
-			minusbutton.on(
-				'click'
-				, function( e ){
-					var takeaway = $('<input/>');
-					takeaway.removeClass('form-control three');
+		var minusbutton = $( '.minus' );
+		minusbutton.on(
+			'click'
+			, function( e ){
+				var takeaway = $('<input/>');
+				takeaway.removeClass('form-control three');
 
-				} 
-			);
+			} 
+		);
 
 /*
 
@@ -205,8 +193,10 @@ $.fn.fullpage( {
 	resize: true,
 	//loopBottom: true,
 	slidesNavigation: true,
+	navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide'],
 	afterRender: function(){
             $($('.section').get(0)).find('.fullPage-slidesNav').hide();
+            
         }
 } );
 

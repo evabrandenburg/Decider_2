@@ -1,12 +1,36 @@
 /* CURRENTLY IN: styles/main.css */
 .controlArrow.next {
 	border-color: transparent transparent transparent #000;
+	display: none;
 }
 
 .controlArrow.prev {
 	border-color: transparent #000 transparent transparent;
+	color:			rgba(255, 255, 255, 0.00);
+	display: 		none;
 }
 
+.slideRight {
+	height:			140px;
+	width:			200px;
+	background-image:	url(arrowright.png);
+	background-size:	100%; 
+	margin:			0px auto;
+	margin-top:		-20px;
+}
+
+.arrowup {
+	height:			100px;
+	width:			50px;
+	background-image: url(arrowup.png);
+
+}
+
+.arrowdown {
+	background-image: url(arrowdown.png);
+	height:			100px;
+	width:			50px;
+}
 /*.initial { 
 	height:			120%;
 	width:			120%;
@@ -66,12 +90,12 @@ h1 {
 
 
 .motto { 
-	height:			110px;
-	width:			350px;
+	height:			120px;
+	width:			400px;
 	background-image: url(motto.png);
 	background-size:	100%;
 	float:			right;
-	margin-top:		-110px;
+	margin-top:		-130px;
 }
 
 .top {
@@ -128,7 +152,7 @@ body {
 	text-align:		center;
 	font-size: 		80px;
 	margin:			auto;
-	margin-top:		115px;
+	margin-top:		75px;
 	letter-spacing:	5px;
 }
 
@@ -205,45 +229,71 @@ form {
 	margin-top:				40px;
 
 }
+
+button {
+	color:				white;
+}
 .btn-primary {
 	margin-top:			15px;
 	color:				#FAE9DE;
-	background-color:	#9E8473;
+	-webkit-transition: background-color .5s linear;
+	background-color:	rgba(214, 0, 79, 0.42);
 	border-radius:		4px;
-	border:				1px #FAE9DE;
+	border:				3px #FAE9DE;
 	width:				320px;
 	height:				120px;
 	font-size:			60px;
 	margin:				auto;
-	margin-top:				40px;
+	margin-top:			40px;
 	padding-top:		10px;
 }
 
 .first {
 	width:				500px;
 	height:				100px;
-	margin-top:				40px;
-	margin-left: 		40px;
+	margin-top:			40px;
+	margin-left: 		200px;
 	font-size:			50px;
 
 }
 
 .btn-primary:hover {
-	background-color:	#11002B;;
-	border:				3px solid #9E8473;
-	color:				#9E8473;
+	background-color:	rgba(17, 0, 43, 0.75);
 }
 
 .btn-primary:focus {
-	background-color:	#11002B;
-	border:				3px solid #9E8473;
-	color:				#9E8473;
+	background-color:	rgba(17, 0, 43, 0.75);
 }
 
 .btn-xs {
 	margin-top:			-5px;
 	width:				40px;
 	height:				40px;
+	color:				white;
+	border:				none;
+	-webkit-transition: background-color .5s linear;
+	background-color:	rgba(214, 0, 79, 0.42);
+}
+
+.btn-xs:hover {
+	background-color:	rgba(17, 0, 43, 0.75);
+	color:				white;
+
+}
+
+.btn-nav {
+	width:				100px;
+	height:				60px;
+	color:				white;
+	border:				none;
+	-webkit-transition: background-color .5s linear;
+	background-color:	rgba(214, 0, 79, 0.42);
+}
+
+.btn-nav:hover {
+	background-color:	rgba(17, 0, 43, 0.75);
+	color:				white;
+
 }
 
 .answer .answer2 {
@@ -289,13 +339,28 @@ form {
 	background-color:	black;
 }
 
-nav {
+/*.topNav {
+	background-color:	rgba(214, 0, 79, 0.42);
+	-webkit-transition: background-color .5s linear;
+}
+
+.topNav:hover {
+	background-color:	rgba(17, 0, 43, 0.75);
+}*/
+
+
+.bottomNav {
 	background-color:	rgba(255, 255, 255, 0.48);
 	width:				100%;
 	height:				90px;
 	border-top:			1px solid black;
 	position:			fixed;
 	bottom:				0px;
+}
+
+.fullPage-slidesNav ul li:nth-child(3) a {
+	display:			none; 
+
 }
 
 .arrows-holder {
@@ -307,16 +372,10 @@ nav {
 	z-index: 			999999999;
 	font-size:			80px;
 	color:				white;
+	background-image:	url(arrowdown.png);
+	background-size: 	100%;
 }
 
-.arrowup {
-
-
-}
-
-.arrowdown {
-
-}
 
 /*.decider { 
 	position: absolute;

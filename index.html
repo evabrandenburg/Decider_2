@@ -18,10 +18,12 @@
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-	<div class="arrows-holder" data-current="1">
-		<div class="arrow-up"><span class="glyphicon glyphicon-hand-up"></span></div>
 
-		<div class="arrow-down"><span class="glyphicon glyphicon-hand-down"></span></div>
+	<div class="arrows-holder" data-current="1">
+		<div class="arrow-up">up
+		</div>
+
+	<div class="arrow-down">down</div>
 	</div>
 		<!--<div class="links">
 		<ul class="nav nav-pills">
@@ -30,9 +32,11 @@
   			<li><a href="#">Messages</a></li>
 		</ul>
 	</div>-->
+
+
 <div class="section">
 
-	<div class="slide" data-anchor="slide1">	
+	<div class="slide firstSlide" data-anchor="slide1">	
 		<div class="initial">
 			<div class="the"></div>
 			<div>
@@ -56,10 +60,13 @@
 			<div class="questionText">
 				<h1>Who's Right?</h1>
 				</div>
+				<span class="toSlide" data-index="2">
+					<div class="slideRight"></div>
+				</span>
 		</div>
 	</div>
 
-	<div class="slide" data-anchor="slide2">
+	<div class="slide hideNav" data-anchor="slide2">
 		<div class="event box">
 
 			<form class="deciderInput">
@@ -90,7 +97,9 @@
             	<div cladd="share">
             		<a href="https://twitter.com/share" class="twitter-share-button" data-text="Decide it!" data-size="large" data-hashtags="DECIDER">Tweet</a>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-					<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+					<div class="fb-like" data-href="http://studio.generalassemb.ly/FEWD25/Eva_Brandenburg/Decider_2/" data-width="50px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
 				</div>
             
 
@@ -107,7 +116,10 @@
 		<div class="question box">
 			<div class="questionText">
 				<h1>Yes or No?</h1>
-				</div>
+			</div>
+			<span class="toSlide" data-index="2">
+				<div class="slideRight"></div>
+			</span>
 		</div>
 	</div>
 
@@ -136,6 +148,7 @@
           	  <div class="shares">Tell all your "friends"</div>
             	<a href="https://twitter.com/share" class="twitter-share-button" data-text="Decide it!" data-size="large" data-hashtags="DECIDER">Tweet</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<div class="fb-like" data-href="http://studio.generalassemb.ly/FEWD25/Eva_Brandenburg/Decider_2/" data-width="50px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
             
 		</div>
 	</div>
@@ -148,7 +161,10 @@
 		<div class="question box">
 			<div class="questionText">
 				<h1>Choose One.</h1>
-				</div>
+			</div>
+			<span class="toSlide" data-index="2">
+				<div class="slideRight"></div>
+			</span>
 		</div>
 	</div>
 
@@ -168,7 +184,6 @@
 						or
 						<div class="NEXT"></div>
 						<button type="button" class="btn  btn-xs plus">+</button>
-						<button type="button" class="btn  btn-xs minus">-</button>
 
 					<div class="form-group">
                       <span class="toSlide" data-index="3"><div class="btn btn-primary decide-button3">Decide It</div></span>
@@ -185,14 +200,20 @@
             	<div class="shares">Put us on the social media</div>
             	<a href="https://twitter.com/share" class="twitter-share-button" data-text="Decide it!" data-size="large" data-hashtags="DECIDER">Tweet</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<div class="fb-like" data-href="http://studio.generalassemb.ly/FEWD25/Eva_Brandenburg/Decider_2/" data-width="50px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 		</div>
 </div>
 
 <!--end third question-->
 
 
-		<nav>
-
+		<nav class="bottomNav">
+			<button type="button" class="btn  btn-nav">
+				<a href="#">The Decider</a></button>
+  			<button type="button" class="btn  btn-nav">
+  				<a href="#">More Work</a>
+  			<button type="button" class="btn  btn-nav">
+  				<a href="mailto:evabrandenburg89@gmail.com">Contact</a></button>
 		</nav>
 	</div><!--class="decider"-->
 
