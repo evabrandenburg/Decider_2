@@ -160,6 +160,11 @@ var formInput3 = $( '.decide-button3' );
 						countInput = countInput + 1;
 						console.log( 'countinput: ' + countInput );
 					}
+
+					if ( countInput = 4 ){
+						alert( 'Thanks for messing everything up, man.')
+						return false;
+					}
 				} 
 		);
 
@@ -173,27 +178,12 @@ var formInput3 = $( '.decide-button3' );
 			} 
 		);
 
-/*
-
-//add input
-
-//put inside click event of plus button
-var newInput = $('<input/>')
-console.log(newInput)
 
 
-newInput.addClass('form-control three')
-newInput.attr('id','three'+ ($('.three').length +1))
-console.log(newInput)
-$('.deciderInput').append(newInput)
-*/
-//$($('.section').get(0)).find('.fullPage-slidesNav').hide();
 
 $.fn.fullpage( {
 	resize: true,
 	//loopBottom: true,
-	slidesNavigation: true,
-	navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide'],
 	afterRender: function(){
             $($('.section').get(0)).find('.fullPage-slidesNav').hide();
             
@@ -210,7 +200,7 @@ $( '.arrow-down' ).on('click', function() {
 		$.fn.fullpage.moveSectionDown();
 });
 
-$( 'h1' ).on('click', function() {
+$( '.questionScribble, h1' ).on('click', function() {
 		$.fn.fullpage.moveSectionDown();
 	})
 

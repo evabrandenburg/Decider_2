@@ -1,4 +1,5 @@
 /* CURRENTLY IN: styles/main.css */
+
 .controlArrow.next {
 	border-color: transparent transparent transparent #000;
 	display: none;
@@ -11,12 +12,13 @@
 }
 
 .slideRight {
-	height:			140px;
-	width:			200px;
-	background-image:	url(arrowright.png);
-	background-size:	100%; 
-	margin:			0px auto;
-	margin-top:		-20px;
+	font-size:		100px;
+	margin-left:	820px;
+	margin-top:		-140px;
+}
+
+.slideLeft {
+
 }
 
 .arrowup {
@@ -31,6 +33,7 @@
 	height:			100px;
 	width:			50px;
 }
+
 /*.initial { 
 	height:			120%;
 	width:			120%;
@@ -71,9 +74,7 @@
 .initial {
 	width:			900px;
 	height:			400px;
-	margin:			auto;
-	margin-bottom:	60px;
-	margin-top:		-30px;
+	top:			0px;
 	background-color:	rgba(255, 255, 255, 0.30);
 	color:			#11002B;
 	border-radius:  2px;
@@ -149,11 +150,19 @@ body {
 
 
 .questionText {
-	text-align:		center;
-	font-size: 		80px;
-	margin:			auto;
-	margin-top:		75px;
-	letter-spacing:	5px;
+
+}
+
+.questionScribble {
+	width:			500px;
+	height:			160px;
+	background-size: 100%;
+	margin:			20px auto;
+	margin-top:		90px;
+}
+
+.scribble1 {
+	background-image: url(whosright.png);
 }
 
 .event {
@@ -283,17 +292,21 @@ button {
 
 .btn-nav {
 	width:				100px;
-	height:				60px;
+	height:				40px;
 	color:				white;
 	border:				none;
 	-webkit-transition: background-color .5s linear;
 	background-color:	rgba(214, 0, 79, 0.42);
+	margin:				10px;
+	margin-top:			20px;
+	float:				left;
+	font-size:			20px;
 }
 
 .btn-nav:hover {
 	background-color:	rgba(17, 0, 43, 0.75);
 	color:				white;
-
+	text-decoration:	none;
 }
 
 .answer .answer2 {
@@ -335,9 +348,6 @@ button {
 	padding-top:		20px;
 }
 
-.list-group-item {
-	background-color:	black;
-}
 
 /*.topNav {
 	background-color:	rgba(214, 0, 79, 0.42);
@@ -353,14 +363,17 @@ button {
 	background-color:	rgba(255, 255, 255, 0.48);
 	width:				100%;
 	height:				90px;
-	border-top:			1px solid black;
+	border-top:			2px solid black;
 	position:			fixed;
 	bottom:				0px;
 }
 
 .fullPage-slidesNav ul li:nth-child(3) a {
-	display:			none; 
+	display:			none;
+}
 
+.fullPage-slidesNav ul li {
+	float:				right;
 }
 
 .arrows-holder {
@@ -375,6 +388,27 @@ button {
 	background-image:	url(arrowdown.png);
 	background-size: 	100%;
 }
+
+a, h2 {
+	text-decoration: 	none;
+	-webkit-transition: color .5s linear;
+	color:				white;
+	margin:				auto;
+	text-align:			center;
+}
+
+a:hover, h2:hover {
+	color:				#11002B;
+	color:				white;
+	text-decoration: 	none;
+}
+
+h2 {
+	float:				left;
+	margin:				20px auto;
+	margin-left:		30px;
+}
+
 
 
 /*.decider { 
