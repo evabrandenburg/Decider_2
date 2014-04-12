@@ -204,8 +204,8 @@ body {
 	background-image: url(winner.png);
 }
 
-.fb-like {
-	margin-top: -100px;
+.fb-lik {
+	margin-top:		-100px;
 }
 
 .socialMedia {
@@ -276,9 +276,9 @@ form {
 
 .toSlide {
 	margin-top:			15px;
-	
+
 	border-radius:		4px;
-	
+
 	width:				320px;
 	height:				120px;
 	font-size:			60px;
@@ -476,4 +476,3 @@ h2 {
 }*/
 
 /*bottom two slides postion absolute
-
