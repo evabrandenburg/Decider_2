@@ -35,14 +35,14 @@
 			if ( choice1 == "" || choice1 == " " ) {
 				alert('You forgot to enter something, idiot!');
 				e.stopPropagation();
-				// there is nothing left to do, so peace
+				// done
 				return;
 			}
 
 			if ( choice2== "" || choice2 == " " ) {
 				alert('You forgot about the second box, idiot!!');
 				e.stopPropagation();
-				// there is nothing left to do, so peace
+				// done
 				return;
 			}
 
@@ -78,7 +78,7 @@ formInput2.on(
 			if ( choicetwo == "" || choicetwo == " " ) {
 				alert('You forgot to enter something, idiot!');
 				e.stopPropagation();
-				// there is nothing left to do, so peace
+				//done
 				return;
 			}
 
