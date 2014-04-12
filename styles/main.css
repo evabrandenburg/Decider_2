@@ -23,8 +23,8 @@
 .slideLeft {
 	height:			90px;
 	width:			150px;
-	margin-right:	100px;
-	margin-top:		0px;
+	margin-left:	-150px;
+	margin-top:		-170px;
 	background-image: url(arrowleft.png);
 	background-size: 100%;
 
@@ -286,8 +286,8 @@ button {
 }
 
 .first {
-	width:				500px;
-	height:				100px;
+	width:				510px;
+	height:				110px;
 	margin-top:			40px;
 	margin-left: 		200px;
 	font-size:			50px;
@@ -440,6 +440,13 @@ h2 {
 	margin-left:		30px;
 	margin-right:		30px;
 }
+
+.about {
+	margin:				20px;
+}
+
+
+
 
 
 
