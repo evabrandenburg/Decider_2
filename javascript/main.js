@@ -38,7 +38,7 @@
 				// there is nothing left to do, so peace
 				return;
 			}
-      
+			
 			if ( choice2== "" || choice2 == " " ) {
 				alert('You forgot about the second box, idiot!!');
 				e.stopPropagation();
@@ -47,33 +47,33 @@
 			}
 
 			var rando = Math.random();
-    
-		if(rando < 0.5) { var finalChoice = choice1;
-		} 
-		else {var finalChoice = choice2;
-	}
-      
+			
+			if(rando < 0.5) { var finalChoice = choice1;
+			} 
+			else {var finalChoice = choice2;
+			}
+			
 			// if we made it here, then task is valid 
 			var end = $( '.end' );
 			end.text( finalChoice );
-		
+			
 		}
-	);
+		);
 
 
 
 
 // second question 
 
-	var formInput2 = $( '.decide-button2' );
-	var Decision2 = $( '.answer2' );
-	formInput2.on(
-		'click'
-		, function( e ) {
+var formInput2 = $( '.decide-button2' );
+var Decision2 = $( '.answer2' );
+formInput2.on(
+	'click'
+	, function( e ) {
 		
 			// grab the task in the input field
 			var choicetwo = $( '#two1' ).val();
-		
+			
 
 			if ( choicetwo == "" || choicetwo == " " ) {
 				alert('You forgot to enter something, idiot!');
@@ -82,26 +82,26 @@
 				return;
 			}
 
-		var rando = Math.random();
-    
-		if(rando < 0.5) { var finalChoice2 = 'NO';
+			var rando = Math.random();
+			
+			if(rando < 0.5) { var finalChoice2 = 'NO';
 		} 
 		else {var finalChoice2 = 'YES';
-		}
-      
+	}
+	
       	// if we made it here, then valid
-			var end2 = $( '.end2' );
-			end2.text( finalChoice2 );	
-		}
-	);
+      	var end2 = $( '.end2' );
+      	end2.text( finalChoice2 );	
+      }
+      );
 
 //third question
 
 var formInput3 = $( '.decide-button3' );
-	var Decision3 = $( '.answer3' );
-	formInput3.on(
-		'click'
-		, function( e ) {
+var Decision3 = $( '.answer3' );
+formInput3.on(
+	'click'
+	, function( e ) {
 		
 			// grab the task in the input field
 			
@@ -137,45 +137,45 @@ var formInput3 = $( '.decide-button3' );
 			}*/
 
       	// if we made it here, then task is valid 
-			var end3 = $( '.end3' );
-			end3.text( winner );
-			
+      	var end3 = $( '.end3' );
+      	end3.text( winner );
+      	
 
+      }
+      );
+
+var plusbutton = $( '.plus' );
+var countInput = 3;
+plusbutton.on(
+	'click'
+	, function( e ){
+		var newInput = $('<input/>');
+
+		if( countInput <= 5 ){
+			newInput.addClass('form-control three');
+			newInput.attr('id','three'+ ($('.three').length +1));
+			console.log(newInput);
+			$('.NEXT').append(newInput).append( ' or ' );
+			
+			countInput = countInput + 1;
+			console.log( 'countinput: ' + countInput );
 		}
+
+		if ( countInput == 4 ){
+			alert( 'Thanks for cramping my style, man.');
+		}
+	} 
 	);
 
-		var plusbutton = $( '.plus' );
-		var countInput = 3;
-		plusbutton.on(
-				'click'
-				, function( e ){
-					var newInput = $('<input/>');
+var minusbutton = $( '.minus' );
+minusbutton.on(
+	'click'
+	, function( e ){
+		var takeaway = $('<input/>');
+		takeaway.removeClass('form-control three');
 
-					if( countInput <= 5 ){
-						newInput.addClass('form-control three');
-						newInput.attr('id','three'+ ($('.three').length +1));
-						console.log(newInput);
-						$('.NEXT').append(newInput).append( ' or ' );
-			
-						countInput = countInput + 1;
-						console.log( 'countinput: ' + countInput );
-					}
-
-					if ( countInput == 4 ){
-						alert( 'Thanks for cramping my style, man.');
-					}
-				} 
-		);
-
-		var minusbutton = $( '.minus' );
-		minusbutton.on(
-			'click'
-			, function( e ){
-				var takeaway = $('<input/>');
-				takeaway.removeClass('form-control three');
-
-			} 
-		);
+	} 
+	);
 
 
 
@@ -184,24 +184,24 @@ $.fn.fullpage( {
 	resize: true,
 	//loopBottom: true,
 	afterRender: function(){
-            $($('.section').get(0)).find('.fullPage-slidesNav').hide();
-            
-        }
+		$($('.section').get(0)).find('.fullPage-slidesNav').hide();
+		
+	}
 } );
 
 $( '.arrow-up' ).on('click', function() {
 
-		$.fn.fullpage.moveSectionUp();
+	$.fn.fullpage.moveSectionUp();
 });
 
 $( '.arrow-down' ).on('click', function() {
 
-		$.fn.fullpage.moveSectionDown();
+	$.fn.fullpage.moveSectionDown();
 });
 
 $( 'h1, .Or' ).on('click', function() {
-		$.fn.fullpage.moveSectionDown();
-	})
+	$.fn.fullpage.moveSectionDown();
+})
 
 
 })();
