@@ -154,7 +154,6 @@ body {
 }
 
 .questionS {
-	width:			500px;
 	height:			160px;
 	background-size: 100%;
 	margin:			20px auto;
@@ -163,14 +162,17 @@ body {
 
 .scribbleOne {
 	background-image: url(whosright.png);
+	width:			500px;
 }
 
 .scribbleTwo {
 	background-image: url(yesno.png);
+	width:			450px;
 }
 
 .scribbleThree {
 	background-image: url(choose.png);
+	width:			600px;
 }
 
 .event {
