@@ -43,7 +43,7 @@
 	height:			90px;
 	width:			150px;
 	margin-left:	-170px;
-	margin-top:		-190px;
+	margin-top:		-130px;
 	background-image: url(arrowleft.png);
 	background-size: 100%;
 
@@ -463,7 +463,7 @@ h2 {
 
 .about {
 	margin:				30px;
-	font-size:			130%;
+	font-size:			140%;
 }
 
 
