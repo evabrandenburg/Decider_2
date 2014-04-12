@@ -12,10 +12,10 @@
 }
 
 .slideRight {
-	height:			50px;
-	width:			100px;
-	background-size:	100%;
-	margin:			auto;
+	height:			80px;
+	width:			150px;
+	margin-left:	820px;
+	margin-top:		-140px;
 	background-image: url(arrowright.png);
 }
 
