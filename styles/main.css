@@ -12,9 +12,11 @@
 }
 
 .slideRight {
-	font-size:		100px;
+	height:			50px;
+	width:			100px;
 	margin-left:	820px;
 	margin-top:		-140px;
+	background-image: url(arrowright.png);
 }
 
 .slideLeft {
@@ -172,7 +174,7 @@ body {
 
 .scribbleThree {
 	background-image: url(choose.png);
-	width:			650px;
+	width:			670px;
 }
 
 .event {
