@@ -200,6 +200,10 @@ body {
 	background-image: url(winner.png);
 }
 
+.fb-lik {
+	margin-top:		-20px;
+}
+
 .event {
 	text-align:		center;
 }
