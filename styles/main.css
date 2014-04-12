@@ -165,6 +165,14 @@ body {
 	background-image: url(whosright.png);
 }
 
+.scribbleTwo {
+	background-image: url(yesorno.png);
+}
+
+.scribbleThree {
+	background-image: url(choose.png);
+}
+
 .event {
 	text-align:		center;
 }
