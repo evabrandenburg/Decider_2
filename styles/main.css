@@ -15,7 +15,7 @@
 	height:			90px;
 	width:			150px;
 	margin-left:	820px;
-	margin-top:		-160px;
+	margin-top:		-170px;
 	background-image: url(arrowright.png);
 	background-size: 100%;
 }
@@ -24,7 +24,26 @@
 	height:			90px;
 	width:			150px;
 	margin-left:	-170px;
-	margin-top:		-160px;
+	margin-top:		-180px;
+	background-image: url(arrowleft.png);
+	background-size: 100%;
+
+}
+
+.slideRight3 {
+	height:			90px;
+	width:			150px;
+	margin-left:	820px;
+	margin-top:		-120px;
+	background-image: url(arrowright.png);
+	background-size: 100%;
+}
+
+.slideLeft3 {
+	height:			90px;
+	width:			150px;
+	margin-left:	-170px;
+	margin-top:		-190px;
 	background-image: url(arrowleft.png);
 	background-size: 100%;
 
@@ -141,7 +160,6 @@ body {
 }
 
 .questionS {
-	height:			160px;
 	background-size: 100%;
 	margin:			20px auto;
 	margin-top:		90px;
@@ -167,7 +185,7 @@ body {
 .scribbleThree {
 	background-image: url(choose.png);
 	width:			700px;
-	height:			130px;
+	height:			115px;
 }
 
 .questionS {
