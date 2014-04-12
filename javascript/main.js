@@ -161,9 +161,8 @@ var formInput3 = $( '.decide-button3' );
 						console.log( 'countinput: ' + countInput );
 					}
 
-					if ( countInput = 4 ){
-						alert( 'Thanks for messing everything up, man.')
-						return false;
+					if ( countInput == 4 ){
+						alert( 'Thanks for cramping my style, man.');
 					}
 				} 
 		);
