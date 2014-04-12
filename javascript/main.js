@@ -38,7 +38,7 @@
 				// there is nothing left to do, so peace
 				return;
 			}
-			
+
 			if ( choice2== "" || choice2 == " " ) {
 				alert('You forgot about the second box, idiot!!');
 				e.stopPropagation();
@@ -47,16 +47,16 @@
 			}
 
 			var rando = Math.random();
-			
+
 			if(rando < 0.5) { var finalChoice = choice1;
 			} 
 			else {var finalChoice = choice2;
 			}
-			
+
 			// if we made it here, then task is valid 
 			var end = $( '.end' );
 			end.text( finalChoice );
-			
+
 		}
 		);
 
@@ -73,7 +73,7 @@ formInput2.on(
 		
 			// grab the task in the input field
 			var choicetwo = $( '#two1' ).val();
-			
+
 
 			if ( choicetwo == "" || choicetwo == " " ) {
 				alert('You forgot to enter something, idiot!');
@@ -83,12 +83,12 @@ formInput2.on(
 			}
 
 			var rando = Math.random();
-			
+
 			if(rando < 0.5) { var finalChoice2 = 'NO';
 		} 
 		else {var finalChoice2 = 'YES';
 	}
-	
+
       	// if we made it here, then valid
       	var end2 = $( '.end2' );
       	end2.text( finalChoice2 );	
@@ -139,7 +139,7 @@ formInput3.on(
       	// if we made it here, then task is valid 
       	var end3 = $( '.end3' );
       	end3.text( winner );
-      	
+
 
       }
       );
@@ -185,7 +185,7 @@ $.fn.fullpage( {
 	//loopBottom: true,
 	afterRender: function(){
 		$($('.section').get(0)).find('.fullPage-slidesNav').hide();
-		
+
 	}
 } );
 
@@ -201,6 +201,10 @@ $( '.arrow-down' ).on('click', function() {
 
 $( 'h1, .Or' ).on('click', function() {
 	$.fn.fullpage.moveSectionDown();
+})
+
+$( '.upUp' ).on('click', function() {
+	$.fn.fullpage.moveSectionUp();
 })
 
 
