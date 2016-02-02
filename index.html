@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0;'>
+    <title >Decider</title>
+    <link rel='stylesheet' href='styles/reset.css'>
+     <link rel='stylesheet' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="styles/jquery.fullPage.css">
+    <link rel='stylesheet' href='styles/main.css'>
+</head>
+
+<body> 
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	<!--<div class="arrows-holder" data-current="1">
+		<div class="arrow-up">up
+		</div>
+
+	<div class="arrow-down">down</div>
+	</div>-->
+
+
+
+<div class="section">
+
+	<div class="slide firstSlide" data-anchor="slide1">	
+		<div class="initial">
+			<div class="the"></div>
+			<div>
+				<div class="name">
+				DECIDER
+				</div>
+				<div class="motto"></div>
+			</div>
+				<div>
+				<button class="btn-primary first"><h1>Get Started</h1>
+			</button>
+				</div>
+		</div>
+	</div>
+</div>
+
+<!-- first question-->
+<div class="section">
+	<div class="slide" data-anchor="slide1">
+		<div class="question box">
+			<div class="questionText">
+				<div class="scribbleOne questionS"></div>
+			</div>
+
+			<div class="Or btn btn-nav">
+				Or...
+			</div>	
+
+			<div>
+				<span class="toSlide" data-index="2">
+					<div class="slideRight">
+					</div>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="slide hideNav" data-anchor="slide2">
+		<div class="event box">
+
+			<form class="deciderInput">
+				<fieldset>
+					<div class="form-group">
+						<input class="form-control one" id="one1" type="text" placeholder="Beatles">
+						vs
+						<input class="form-control one" id="one2" type="text" placeholder="Rolling Stones">
+					</div>
+
+					<div class="form-group">
+                      <span class="toSlide" data-index="3"><div class="btn btn-primary decide-button">Decide It</div></span>
+
+                  </div>
+				</fieldset>
+			</form>
+
+			<div>
+				<span class="toSlide" data-index="1">
+					<div class="slideLeft">
+					</div>
+				</span>
+			</div>
+
+		</div><!--event-->
+	</div>
+
+	<div class="slide" data-anchor="slide3">
+		<div class="result box">
+          	  <div class="winner"></div>
+            	<div class=" ANSWER answer end "></div>
+
+            	<div class="shares">Tell everyone you know (like they care)</div>
+            	
+            <div class="socialMedia">
+            		<a href="https://twitter.com/share" class="twitter-share-button" data-text="Decide it!" data-size="large" data-hashtags="DECIDER">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+					<div class="fb-like" data-href="http://studio.generalassemb.ly/FEWD25/Eva_Brandenburg/Decider_2/" data-width="50px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+			</div>
+
+			<div>
+				<span class="toSlide" data-index="2">
+					<div class="slideLeft">
+					</div>
+				</span>
+			</div>
+            
+		</div>
+	</div>
+</div>
+<!--end first question-->
+
+<!--start second question-->
+
+<div class="section">
+	<div class="slide" data-anchor="slide1">
+		<div class="question box">
+			<div class="upUp btn btn-nav">
+				Up
+			</div>	
+			<div class="questionText">
+				<h1><div class="scribbleTwo questionS"><h1></div>
+			</div>
+
+			<div class="Or btn btn-nav">
+				Or...
+			</div>	
+
+			<div>
+				<span class="toSlide" data-index="2">
+					<div class="slideRight">
+						<!--<span class="glyphicon glyphicon-arrow-right"></span>-->
+					</div>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="slide" data-anchor="slide2">
+		<div class="event box">
+
+				<form class="deciderInput">
+				<fieldset>
+					<div class="form-group">
+						<input class="form-control two" id="two1" type="text" placeholder="Should I stay or should I go">
+
+					</div>
+
+					<div class="form-group">
+                      <span class="toSlide" data-index="3"><div class="btn btn-primary decide-button2">Decide It</div></span>
+                    </div>
+				</fieldset>
+			</form>
+
+			<div>
+				<span class="toSlide" data-index="1">
+					<div class="slideLeft">
+					</div>
+				</span>
+			</div>
+
+		</div><!--event-->
+	</div>
+
+	<div class="slide" data-anchor="slide3">
+		<div class="result box">
+
+			<div class="winner"></div>
+
+          	  <div class=" ANSWER answer2 end2 "></div>
+          	  <div class="shares">Tell all your "friends"</div>
+
+          	  <div class="socialMedia">
+            	<a href="https://twitter.com/share" class="twitter-share-button" data-text="Decide it!" data-size="large" data-hashtags="DECIDER">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<div class="fb-like" data-href="http://studio.generalassemb.ly/FEWD25/Eva_Brandenburg/Decider_2/" data-width="50px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+			</div>
+
+			<div>
+				<span class="toSlide" data-index="2">
+					<div class="slideLeft">
+					</div>
+				</span>
+			</div>
+            
+		</div>
+	</div>
+</div>
+
+<!--end second start third question-->
+
+<div class="section">
+	<div class="slide" data-anchor="slide1">
+		<div class="question box">
+			<div class="upUp btn btn-nav">
+				Up
+			</div>	
+			<div class="questionText">
+				<h1><div class="scribbleThree questionS"><h1></div>
+			</div>	
+
+			<div>
+				<span class="toSlide" data-index="2">
+					<div class="slideRight3">
+					</div>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="slide" data-anchor="slide2">
+		<div class="event box">
+
+				<form class="deciderInput">
+					<fieldset>
+						<input class="form-control  three" id="three1" type="text" placeholder="laundry">
+
+						or
+						<input class="form-control  three" id="three2" type="text" placeholder="Homework">
+
+						or
+						<input class="form-control  three" id="three3" type="text" placeholder="PARTY">
+
+						or
+						<div class="NEXT"></div>
+						<button type="button" class="btn  btn-xs plus">+</button>
+
+					<div class="form-group">
+                      <span class="toSlide" data-index="3"><div class="btn btn-primary decide-button3">Decide It</div></span>
+                    </div>
+
+					</fieldset>
+				</form>
+
+				<div>
+				<span class="toSlide" data-index="1">
+					<div class="slideLeft3">
+					</div>
+				</span>
+			</div>
+
+			</div><!--event-->
+	</div>
+
+	<div class="slide" data-anchor="slide3">
+		<div class="result box">
+
+			 <div class="winner"></div>
+
+            	<div class=" ANSWER answer3 end3 "></div>
+
+            	<div class="shares">Put us on the social media</div>
+
+            <div class="socialMedia">
+            	<a href="https://twitter.com/share" class="twitter-share-button" data-text="Decide it!" data-size="large" data-hashtags="DECIDER">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<div class="fb-like" data-href="http://studio.generalassemb.ly/FEWD25/Eva_Brandenburg/Decider_2/" data-width="50px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+			</div>
+
+			<div>
+				<span class="toSlide" data-index="2">
+					<div class="slideLeft">
+					</div>
+				</span>
+			</div>
+
+		</div>
+
+	</div>
+
+</div><!--end third question-->
+
+	<div class="section">	
+		<div class="slide" data-anchor="slide1">
+			<a id="about">
+				<div class="box">
+					<div class="about">
+
+						<h3><strong> About this silly Website</strong> </h3></b>
+
+						<p>Made by <a href="https://www.facebook.com/eva.brandenburg" target="_blank">yours truely</a>
+							with 
+							<a href="http://alvarotrigo.com/fullPage/#secondPage" target="_blank">
+							this </a>and
+							<a href="http://getbootstrap.com/components/" target="_blank">
+							this </a>
+						AND most importantly thanks so much to all the 
+							<a href="http://mottaquikar.im/wordpress/" target="_blank">
+								Instructors</a> and fellow<a href="#"> students</a> in 
+							<a href="https://generalassemb.ly/education/front-end-web-development" target="_blank">
+								FEWD 25.</a>
+
+						<p>For (even more) laughs check out my<a href="http://studio.generalassemb.ly/FEWD25/Eva_Brandenburg/Eva_portfolio/" target=_"blank">
+							"porfolio"</a> from week two.
+						</p>
+
+						<p><a href="https://www.linkedin.com/pub/eva-brandenburg/34/b80/53b" target="_blank">LINK ME IN</a> and bother me on 
+							<a href="https://github.com/evabrandenburg">github</a>
+
+						</p>
+
+												<script src="//platform.linkedin.com/in.js" type="text/javascript">
+  lang: en_US
+</script>
+<script type="IN/Share" data-url="http://studio.generalassemb.ly/FEWD25/Eva_Brandenburg/Decider_2/" data-counter="right"></script>
+
+  
+					</div> 
+
+
+
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+
+		<nav class="bottomNav">
+				<a href="http://studio.generalassemb.ly/FEWD25/Eva_Brandenburg/Decider_2/">
+					<h2>The Decider</h2></a>
+
+  				 <div class="btn btn-nav">
+  				 	<a href="#about">About</a>
+  				 </div>
+
+  				<div class="btn  btn-nav">
+  				<a href="mailto:evabrandenburg89@gmail.com">Contact</a>
+  				</div>
+		</nav>
+
+
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
+    <script type="text/javascript" src="javascript/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.fullPage.min.js"></script>
+    <script src='javascript/main.js'></script>
+    
+</body>
+</html>
